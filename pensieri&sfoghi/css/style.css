@@ -1,0 +1,182 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F4F4F4;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    background-color: #34495E;
+}
+.fa-cloud{
+    position: relative;
+    color: white;
+}
+#nomeSito{
+    position: relative;
+    top: 12.5px;
+    margin-left: 10%;
+    float: left;
+    width: min-content;
+    color: white;
+    cursor: default;
+}
+.fa-user{
+    position: relative;
+    left: 68%;
+    margin-top: 12.5px;
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+
+#cnt-registrazione{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.box-messaggio{
+    padding: 10px;
+    border: 1px solid black;
+}
+.txt-messaggio{
+    color: #34495E;
+}
+.button-index{
+    padding: 10px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #34495E;
+    border: none;
+    border-radius: 10px;
+}
+.link-registrati{
+    text-decoration: none;
+    color: white;
+}
+.btn-1{
+    position: relative;
+    left: 60%;
+    margin-top: 55px;
+}
+.btn-2{
+    position: relative;
+    left: 60%;
+    margin-top: 36px;
+}
+
+
+#txt-storie{
+    position: relative;
+    left: 5%;
+    width: 95%;
+    color: #34495E;
+}
+
+
+
+#catalogo_storie_scritte{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+    grid-auto-rows: min-content;
+    gap: 10px;
+    padding: 20px;
+}
+.cnt-storie{
+    padding: 10px;
+    background-color: #34495E;
+}
+.formStoriePP{
+    margin-bottom: 10px;
+}
+.nomeStoria{
+    font-size: 20px;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+}
+.txt-storia{
+    text-align: justify;
+    overflow: hidden;
+    font-weight: bold;
+    resize: none;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    color: white;
+    background-color: transparent;
+}
+
+
+@media (max-width: 768px) {
+    #cnt-registrazione{
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+    }
+
+    #catalogo_storie_scritte{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .fa-user{
+        left: 50%;
+    }
+    #catalogo_storie_scritte{
+        grid-template-columns: 1fr;
+    }
+    .btn-1{
+        margin-top: 18px;
+    }
+    .button-index{
+        left: 42%;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .box-1{
+        height: 200px;
+    }
+    .box-2{
+        margin-top: 20px;
+    }
+    .button-index{
+        left: 38%;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .box-1{
+        height: 220px;
+    }
+    .box-2{
+        margin-top: 40px;
+    }
+    .button-index{
+        left: 28%;
+    }
+    .cnt-storie{
+        width: 85%;
+        gap: 0px;
+    }
+    .txt-storia{
+        width: 90%;
+    }
+}
